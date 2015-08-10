@@ -26,7 +26,6 @@ defmodule EcodeGen.CodeMessageGenerator do
     block_densities = Poison.decode!(version.block_densities)
     block_densities = List.to_tuple(block_densities)
 
-    code = EcodeGen.Code
     density_0 = EcodeGen.CodeMessageGenerator.calc_density(0, block_quantity, block_densities)
     density_1 = EcodeGen.CodeMessageGenerator.calc_density(1, block_quantity, block_densities)
     density_2 = EcodeGen.CodeMessageGenerator.calc_density(2, block_quantity, block_densities)
